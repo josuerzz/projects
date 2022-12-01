@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    
+    <!-- CDN BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- THEME FOR BT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.1/quartz/bootstrap.min.css" integrity="sha512-MtIFp1X1XW20+oDP5Px0yyJ2QuTXsiHqNQnNdC/haBRqVePWs1x7wn5YXpQ6+WWT5sqVawAw43r9hqnjcZ5XZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icons BT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+  <body>
+
+    
+
+    <div class="container-fluid text-center">
+        <h1>PROYECTO - CALCULADORA</h1>
+        <div class="calculadora card ">
+
+            <div class="activador-tema active">
+                <i class="bi bi-brightness-low-fill activador-icon text-dark fs-4"></i>
+            </div>
+
+            <div class="display-screen">
+                <div id="display">
+                </div>
+            </div>
+
+            <div class="btns">
+                <table>
+                    <tr>
+                        <td><button class="btn rounded-circle" id="clear">C</button></td>
+                        <td><button class="btn btn-light rounded-circle" id="/">/</button></td>
+                        <td><button class="btn btn-light rounded-circle" id="*">x</button></td>
+                        <td><button class="btn btn-light rounded-circle" id="delete"><i class="bi bi-backspace-fill"></i></button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn btn-num rounded-circle" id="7">7</button></td>
+                        <td><button class="btn btn-num rounded-circle" id="8">8</button></td>
+                        <td><button class="btn btn-num rounded-circle" id="9">9</button></td>
+                        <td><button class="btn btn-light rounded-circle" id="-">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn btn-num rounded-circle" id="4">4</button></td>
+                        <td><button class="btn btn-num rounded-circle" id="5">5</button></td>
+                        <td><button class="btn btn-num rounded-circle" id="6">6</button></td>
+                        <td><button class="btn btn-light rounded-circle" id="+">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="btn btn-num rounded-circle" id="1">1</button></td>
+                        <td><button class="btn btn-num rounded-circle" id="2">2</button></td>
+                        <td><button class="btn btn-num rounded-circle" id="3">3</button></td>
+                        <td rowspan="2"><button class="btn rounded-pill igual" id="=">=</button></td>
+                    </tr>
+
+                    <tr>
+                            <td><button class="btn btn-num rounded-circle" id=".">.</button></td>
+                            <td><button class="btn btn-num rounded-circle" id="0">0</button></td>
+                            <td><button class="btn btn-num rounded-pill" id="00">00</button></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="codigo.js"></script>
+</body>
+</html>
